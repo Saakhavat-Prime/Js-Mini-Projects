@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>counter</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <!-- counter -->
+    <div class="buttons">
+        <button id="btn" class="all">Click Me</button>
+        <br>
+        <button id="reset-btn" class="all">Reset</button>
+    </div>
+    <p id="count">0</p>
+
+    <script>
+        // counter 
+        let count = 0;
+        document.getElementById("btn").addEventListener(
+            "click", function () {
+                count++;
+                document.getElementById("count").innerText = count;
+            }
+        )
+        // reset button 
+        document.getElementById("reset-btn").addEventListener(
+            "click",function(){
+                count = 0;
+                document.getElementById("count").innerText = count;
+
+            }
+        )
+    </script>
+
+</body>
+
+</html>

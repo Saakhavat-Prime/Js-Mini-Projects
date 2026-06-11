@@ -1,0 +1,37 @@
+ body {
+     height: 100vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+ }
+
+ .all {
+     background-color: #008CBA;
+     /* Blue background */
+     color: white;
+     /* White text */
+     padding: 15px 32px;
+     border: none;
+     cursor: pointer;
+     border-radius: 4px;
+ }
+
+ .all:hover {
+     background-color: #04AA6D;
+     /* Green background on hover */
+ }
+.buttons{
+    display: flex;
+    gap: 10px;
+}
+#reset-btn{
+    background-color:#f44336;
+}
+#reset-btn:hover {
+  background-color: #d32f2f; /* Darker red on hover */
+}
+ #count {
+     font-size: 24px;
+     font-weight: 700;
+ }
